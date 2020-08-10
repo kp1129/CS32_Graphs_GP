@@ -3,21 +3,22 @@
 *Day 1*
 
 ## 1. What is a graph and how is it represented?
+-nodes with connections/edges
 
 - What is a Graph?
 
 - Terminology
     - Directed Vs Undirected
-        - Directed (Twitter follow) : Undirected (bi-directional) (Facebook)
+        - Directed (Twitter follow)(linked list, with edges) : Undirected (bi-directional) (Facebook) (doubly linked list with edges) 
         - Undirected Edge is the same as a bi directional edge 
     
     - Cyclic Vs Acyclic
         - cyclic follows a cycle within a graph
         - acyclic does not follow a cycle (to the origin point)
-    - Dense Vs Sparse
-    - Weighted Vs Unweighted
+    - Dense Vs Sparse (how many edges connect to a single node)
+    - Weighted Vs Unweighted (data stored/represented by the edges between the nodes)
 
-- Adjacency Lists & Adjacency Matrices
+- Adjacency Lists & Adjacency Matrices (adjacency lists are slightly more prevalent and have more use cases than adjacency matrices)
 
 ## Lets code an Adjacency List
 
@@ -43,8 +44,8 @@ class Graph:
 ## 2. Breadth First & Depth first Traversal
 These traversals use the BFS and DFS algorithm respectively
 
-- *BFT* Looks at nodes `1` away then nodes `2` away then nodes `n` away such that `n` is the next level of children, grand-children etc
-- *DFT* looks at a `neighbor`, then the `neighbor's neighbor`, then the `neighbor's neighbor's neighbor` etc
+- *dFT* Looks at nodes `1` away then nodes `2` away then nodes `n` away such that `n` is the next level of children, grand-children etc
+- *bFT* looks at a `neighbor`, then the `neighbor's neighbor`, then the `neighbor's neighbor's neighbor` etc
 
 
 ## Lets take a quick break
